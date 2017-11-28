@@ -60,9 +60,10 @@ class Menu {
                 case ONE_TWO:
                     showOneTwoMenu();
                     break;
-                case BACK:
                 case ROOT:
+                case BACK:
                     oneMenuIsWorking = false;
+                    break;
             }
         }
     }
@@ -85,12 +86,11 @@ class Menu {
                 case ONE_ONE_TWO:
                     showOneOneTwoMenu();
                     break;
+                case ROOT:
+                    oneMenuIsWorking = false;
                 case BACK:
                     oneOneMenuIsWorking = false;
                     break;
-                case ROOT:
-                    oneOneMenuIsWorking = false;
-                    oneMenuIsWorking = false;
             }
         }
     }
@@ -105,12 +105,11 @@ class Menu {
             System.out.print("> ");
 
             switch (reader.readLine().trim()) {
+                case ROOT:
+                    oneMenuIsWorking = false;
                 case BACK:
                     oneTwoMenuIsWorking = false;
                     break;
-                case ROOT:
-                    oneTwoMenuIsWorking = false;
-                    oneMenuIsWorking = false;
             }
         }
     }
@@ -125,13 +124,12 @@ class Menu {
             System.out.print("> ");
 
             switch (reader.readLine().trim()) {
+                case ROOT:
+                    oneOneMenuIsWorking = false;
+                    oneMenuIsWorking = false;
                 case BACK:
                     oneOneOneMenuIsWorking = false;
                     break;
-                case ROOT:
-                    oneOneOneMenuIsWorking = false;
-                    oneOneMenuIsWorking = false;
-                    oneMenuIsWorking = false;
             }
         }
     }
@@ -146,13 +144,12 @@ class Menu {
             System.out.print("> ");
 
             switch (reader.readLine().trim()) {
+                case ROOT:
+                    oneOneMenuIsWorking = false;
+                    oneMenuIsWorking = false;
                 case BACK:
                     oneOneTwoMenuIsWorking = false;
                     break;
-                case ROOT:
-                    oneOneTwoMenuIsWorking = false;
-                    oneOneMenuIsWorking = false;
-                    oneMenuIsWorking = false;
             }
         }
     }
