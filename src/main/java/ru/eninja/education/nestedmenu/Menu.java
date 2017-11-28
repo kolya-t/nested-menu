@@ -84,6 +84,7 @@ class Menu {
                     break;
                 case ONE_ONE_TWO:
                     showOneOneTwoMenu();
+                    break;
                 case BACK:
                     oneOneMenuIsWorking = false;
                     break;
